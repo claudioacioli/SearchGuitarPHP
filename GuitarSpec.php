@@ -72,7 +72,7 @@ class GuitarSpec
         if($this->getBuilder() !== $guitarSpec->getBuilder())
             return false;
 
-        if(mb_strtolower($this->getModel()) !== mb_strtolower($guitarSpec->getModel()))
+        if(strtolower($this->getModel()) !== strtolower($guitarSpec->getModel()))
             return false;
 
         if($this->getType() !== $guitarSpec->getType())
